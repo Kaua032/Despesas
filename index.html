@@ -3,41 +3,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Expenses chart component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+  <main>
+    <header>
+      <div>
+        <p id="myBalance" class="normal">My balance</p>
+        <p id="totalBalance">$921.48</p>
+      </div>
+      <img src="./images/logo.svg" alt="">
+    </header>
 
-  My balance
-  $921.48
-
-  Spending - Last 7 days
-
-  mon
-  tue
-  wed
-  thu
-  fri
-  sat
-  sun
-
-  Total this month
-  $478.33
-
-  +2.4%
-  from last month
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    <section id="week">
+      <h2>Spending - Last 7 days</h2>
+      <div id="weekValues">
+        
+      </div>
+      <hr>
+      <section>
+        <div id="thisMonth">
+          <p class="normal">Total this month</p>
+          <p id="totalMonth" >$478.33</p>
+        </div>
+        <div id="lastMonth">
+          <p>+2.4%</p>
+          <p class="normal">from last month</p>
+        </div>
+      </section>
+    </section>
+  </main>
+  <script src="./script.js"></script>
 </body>
 </html>
